@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+xmlns:android="http://schemas.android.com
+/apk/res/android"
+ 
+xmlns:app="http://schemas.android.com/apk
+/res-auto"
+ 
+xmlns:tools="http://schemas.android.com/to
+ols"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ 
+android:background="@color/black_shade_
+1"
+ 
+style="@style/AppTheme.MaterialTheme"
+ android:orientation="vertical"
+ tools:context=".MainActivity">
+ <TextView
+
+ android:layout_width="match_parent"
+ 
+android:layout_height="wrap_content"
+ android:text="LANGUAGE 
+TRANSLATOR"
+ android:textSize="20sp"
+ android:gravity="center"
+ android:textStyle="bold"
+ android:padding="4dp"
+ android:layout_marginTop="28sp"
+ android:textColor="@color/yellow"
+ />
+ <LinearLayout
+ android:layout_width="match_parent"
+ 
+android:layout_height="wrap_content"
+ android:orientation="horizontal"
+ android:layout_gravity="center"
+ android:weightSum="3"
+ android:layout_marginStart="20dp"
+ android:layout_marginEnd="20dp"
+ android:layout_marginTop="10dp"
+ android:padding="30dp"
+ >
+ <Spinner
+ android:layout_width="80dp"
+ 
+android:layout_height="wrap_content"
+ android:id="@+id/idFromSpinner"
+ android:layout_margin="3dp"
+ android:padding="20dp"
+ />
+ <ImageView
+ android:padding="20dp"
+ android:layout_width="8dp"
+ 
+android:layout_height="wrap_content"
+ android:layout_weight="1"
+ 
+android:src="@drawable/ic_right_arrow"
+ app:tint="@color/white"
+ android:layout_gravity="center"
+ />
+ <Spinner
+Translator app 1BI20CS017
+Department of CS&E, BIT 2022-23 11
+ android:layout_width="0dp"
+ 
+android:layout_height="wrap_content"
+ android:layout_weight="1"
+ android:id="@+id/idToSpinner"
+ android:layout_gravity="center"
+ android:padding="20dp"
+ />
+ </LinearLayout>
+ 
+<com.google.android.material.textfield.Text
+InputLayout
+ android:layout_width="match_parent"
+ android:layout_height="100dp"
+ android:layout_marginStart="20dp"
+ android:layout_marginEnd="20dp"
+ android:layout_marginTop="20dp"
+ 
+style="@style/Widget.MaterialComponents.
+TextInputLayout.OutlinedBox"
+ android:hint="Source Text"
+ android:padding="5dp"
+ app:hintTextColor="@color/white"
+ 
+android:textColorHint="@color/white">
+ 
+<com.google.android.material.textfield.Text
+InputEditText
+ 
+android:layout_width="match_parent"
+ 
+android:layout_height="match_parent"
+ android:id="@+id/idEdtSource"
+ android:ems="10"
+ android:importantForAutofill="no"
+ android:textColor="@color/white"
+ 
+android:textColorHint="@color/white"
+ android:textSize="14sp"
+ 
+android:inputType="textImeMultiLine|text
+MultiLine"
+ />
+
+ 
+</com.google.android.material.textfield.Tex
+tInputLayout>
+ <TextView
+ android:layout_width="match_parent"
+ 
+android:layout_height="wrap_content"
+ android:text="OR"
+ android:textAllCaps="true"
+ android:textColor="@color/white"
+ android:layout_gravity="center"
+ android:layout_marginTop="5dp"
+ android:textAlignment="center"
+ />
+ <ImageView
+ android:layout_width="70dp"
+ android:layout_height="70dp"
+ android:layout_gravity="center"
+ android:layout_marginTop="10dp"
+ android:tint="@color/yellow"
+ android:src="@drawable/ic_mic"
+ android:id="@+id/idIVMic"
+ />
+ <TextView
+ android:layout_width="match_parent"
+ 
+android:layout_height="wrap_content"
+ android:text="Say Something"
+ android:layout_gravity="center"
+ android:textColor="@color/white"
+ android:textSize="15sp"
+ android:textAlignment="center"
+ />
+ 
+<com.google.android.material.button.Materi
+alButton
+ android:layout_width="match_parent"
+ 
+android:layout_height="wrap_content"
+ android:layout_marginStart="20dp"
+ android:layout_marginEnd="20dp"
+ android:layout_marginTop="20dp"
+ android:text="Translate"
+ android:textAllCaps="false"
+ android:id="@+id/idBtnTranslate"
+ />
+ <TextView
+ android:layout_width="match_parent"
+ 
+android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:textAllCaps="false"
+ android:gravity="center"
+ android:layout_marginTop="10dp"
+ android:textColor="@color/yellow"
+ android:textSize="15sp"
+ android:textAlignment="center"
+ 
+android:id="@+id/idTVTranslatedTV"
+ />
+</LinearLayout>
